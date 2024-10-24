@@ -14,7 +14,12 @@ body {
 
 .container {
     max-width: 1320px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
     color: #6C798B;
+    flex-wrap: wrap;
 }
 
 .header {
@@ -34,7 +39,7 @@ body {
     color: #364253;
     text-align: center;
     margin: 15px auto;
-    margin-right: 290px;
+    margin-right: 330px;
     font-size: 24px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400; 
@@ -62,8 +67,7 @@ body {
     display: inline;
 }
 
-button {
-    padding: 10px; 
+button { 
     background-color: transparent;
     font-size: 16px;
     font-family: 'Nunito Sans', sans-serif;
@@ -73,7 +77,7 @@ button {
 
 .home {
     color: black; 
-    margin-left: 370px;
+    margin-left: 230px;
     border-top: 2px solid orange;
 }
 
@@ -94,15 +98,14 @@ button {
     border-top: 2px solid orange;
 }
 
-.container-fluid {
-    max-width: 100%;
+.container-fluid{
+    width: 100%;
     height: 450px;
     border: 1px solid red;
     margin-top: 50px;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-
 
 .slider{
     width: 400%;
@@ -189,7 +192,6 @@ button {
 
     .container-fluid {
         width: 100%;
-        height: 100%;
     }
 
     .slider {
@@ -202,7 +204,6 @@ button {
         height: 100%;
     }
 }
-
 
 .slide1{
     background-image: url('https://static.zohocdn.com/sites/stock-images/images/zpstock-image-933.jpg'), 
@@ -488,6 +489,158 @@ button {
 
 .service {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.7;
+    flex-wrap: wrap; 
+}
+
+.service h1 {
+    font-size: 18px;
+    margin-left: 60px; 
+    margin-bottom: 50px;
+    text-align: center; 
+}
+
+.service p {
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.free-shipping, .Support-24, .return, .Secure-Payment {
+    margin-right: 50px; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    text-align: center; 
+}
+
+.free-shipping i, .Support-24 i, .return i, .Secure-Payment i {
+    font-size: 23px;
+    border: 1px solid orange;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #EB984E;
+    margin-top: 30px; 
+    color: white;
+    margin-right: 10px;
+}
+
+.free-shipping h2, .Support-24 h2, .return h2, .Secure-Payment h2 {
+    font-size: 20px;
+    color: #364253;
+    text-align: center; /* Ensure text stays centered */
+}
+
+/* Secure Payment Adjustments */
+.Secure-Payment h2 {
+    font-size: 19px;
+    width: 100%;
+    color: #364253;
+}
+
+/* Responsive Styling with Media Queries */
+@media (max-width: 1200px) {
+    .service h1 {
+        font-size: 17px;
+        margin-left: 50px;
+    }
+
+    .service p {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .free-shipping, .Support-24, .return, .Secure-Payment {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .service {
+        flex-direction: column; /* Stack the services vertically */
+    }
+
+    .free-shipping, .Support-24, .return, .Secure-Payment {
+        margin-right: 0; /* Remove horizontal margin for small screens */
+        margin-bottom: 30px; /* Add bottom margin between services */
+    }
+
+    .service h1 {
+        font-size: 16px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .free-shipping i, .Support-24 i, .return i, .Secure-Payment i {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .free-shipping h2, .Support-24 h2, .return h2, .Secure-Payment h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column; /* Stack services vertically on smaller screens */
+    }
+
+    .service h1 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .service p {
+        font-size: 13px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .free-shipping i, .Support-24 i, .return i, .Secure-Payment i {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .free-shipping h2, .Support-24 h2, .return h2, .Secure-Payment h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .service h1 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .service p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .free-shipping i, .Support-24 i, .return i, .Secure-Payment i {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .free-shipping h2, .Support-24 h2, .return h2, .Secure-Payment h2 {
+        font-size: 14px;
+    }
+}
+
+.feature {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.service {
+    display: flex;
     justify-content: space-between; 
     align-items: center;
     line-height: 1.7;
@@ -520,7 +673,7 @@ button {
     border-radius: 50px;
     padding: 10px;
     background-color: #EB984E;
-    margin-top: 30px; 
+    margin-top: 30px; /* Adjust margin for better spacing */
     color: white;
     margin-right: 10px;
 }
@@ -536,173 +689,94 @@ button {
     color: #364253;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .service {
-        flex-wrap: wrap;
-        justify-content: center;
+        gap: 10px;
+    }
+    .service h1 {
+        font-size: 17px;
+        margin-left: 50px;
+    }
+
+    .service p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 992px) {
+    .service {
+        flex-wrap: wrap; 
+    }
+
+    .free-shipping, .Support-24, .return, .Secure-Payment {
+        margin-bottom: 30px;
     }
 
     .service h1 {
+        font-size: 16px;
         margin-left: 0;
-        margin-bottom: 30px;
     }
 
     .free-shipping i, .Support-24 i, .return i, .Secure-Payment i {
         font-size: 20px;
-        padding: 8px;
         margin-top: 20px;
     }
 
     .free-shipping h2, .Support-24 h2, .return h2, .Secure-Payment h2 {
         font-size: 18px;
-        margin-right: 100px;
-    }
-
-    .Secure-Payment h2 {
-        font-size: 17px;
-        margin-right: 50px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .service {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; 
     }
 
-    .free-shipping,
-    .Support-24,
-    .return,
-    .Secure-Payment {
-        flex: none;
-        width: 100%;
-        margin-bottom: 20px;
+    .service h1 {
+        font-size: 15px;
     }
 
-    .free-shipping i,
-    .Support-24 i,
-    .return i,
-    .Secure-Payment i {
-        margin-top: 10px;
-        padding: 6px;
+    .service p {
+        font-size: 13px;
     }
 
-    .free-shipping h2,
-    .Support-24 h2,
-    .return h2,
-    .Secure-Payment h2 {
+    .free-shipping i, .Support-24 i, .return i, .Secure-Payment i {
+        font-size: 18px;
+    }
+
+    .free-shipping h2, .Support-24 h2, .return h2, .Secure-Payment h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .service h1 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .service p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .free-shipping i, .Support-24 i, .return i, .Secure-Payment i {
         font-size: 16px;
     }
 
-    .Secure-Payment h2 {
-        font-size: 15px;
-    }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-    .service {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .free-shipping,
-    .Support-24,
-    .return,
-    .Secure-Payment {
-        flex: 1;
-        margin: 10px;
-    }
-
-    .free-shipping h2,
-    .Support-24 h2,
-    .return h2,
-    .Secure-Payment h2 {
-        font-size: 18px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .service {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .free-shipping,
-    .Support-24,
-    .return,
-    .Secure-Payment {
-        flex: 1;
-        margin: 20px;
-    }
-
-    .free-shipping h2,
-    .Support-24 h2,
-    .return h2,
-    .Secure-Payment h2 {
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1200px) {
-    .service {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .free-shipping,
-    .Support-24,
-    .return,
-    .Secure-Payment {
-        flex: 1;
-        margin: 20px;
-    }
-
-    .free-shipping h2,
-    .Support-24 h2,
-    .return h2,
-    .Secure-Payment h2 {
-        font-size: 22px;
-    }
-}
-
-@media (min-width: 1201px) {
-    .service {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .free-shipping,
-    .Support-24,
-    .return,
-    .Secure-Payment {
-        flex: 1;
-        margin: 30px;
-    }
-
-    .free-shipping h2,
-    .Support-24 h2,
-    .return h2,
-    .Secure-Payment h2 {
-        font-size: 24px;
+    .free-shipping h2, .Support-24 h2, .return h2, .Secure-Payment h2 {
+        font-size: 14px;
     }
 }
 
 .shop h1 {
     font-size: 25px;
-    color: #364253; 
-    font-weight: 400;
-    margin-top: 50px;
-    text-align: center; 
-}
-
-.shop p {
-    color: #666;
-    font-size: 16px;
-    margin: 50px auto 0; 
-    max-width: 700px;
     text-align: center;
+    color: #364253;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-weight: 400;
 }
-
 
 .product {
     display: flex;
@@ -710,6 +784,7 @@ button {
     background-color: #F7F8FA;
     flex-wrap: wrap;
     border: 1px  rgb(0, 0, 0);
+    width: 100%;
     background-color: #F7F8FA;
 }
 
@@ -717,8 +792,6 @@ button {
     background-color: #fff;
     padding: 10px;
     border-radius: 8px;
-    width: 390px;
-    margin: 20px;
 }
 
 .product img {
@@ -728,18 +801,22 @@ button {
 }
 
 .product h2 {
-    font-size: 16px;
+    font-size: 19px;
     color: #333;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .product p {
-    font-size: 18px; 
-    line-height: 1.5; 
-    text-align: center;
+    font-size: 17px;
     color: #666;
     line-height: 1.7;
     text-align: center;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .button1 {
@@ -749,8 +826,6 @@ button {
     color: orange;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
-    font-size: 16px;
     border-radius: 20px;
     transition: all 2s ease;
 }
@@ -764,8 +839,6 @@ button {
     display: flex;
     flex-wrap: wrap;          
     justify-content: center; 
-    gap: 20px;               
-    padding: 20px;
 }
 
 .product-section h1{
@@ -776,7 +849,6 @@ button {
 
 .wrapper {
     width: 100%;
-    max-width: 1400px; 
     margin: 0 auto; 
     padding: 20px;
 }
@@ -788,7 +860,6 @@ button {
 
 .row{
     display: flex;
-    gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
@@ -875,11 +946,12 @@ button {
 .cart-btn button:hover {
     background-color: darkorange;
 }
-
+     
+/* General Styling */
 .use {
     display: flex;
     margin-top: 100px;
-    justify-content: space-between; 
+    justify-content: space-between; /* Ensure proper spacing between elements */
     flex-wrap: wrap; 
 }
 
@@ -900,7 +972,6 @@ button {
 .write {
     flex-basis: 50%;
     margin-left: 0;
-    margin-top: 200px;
     color: #364253;
     text-align: center;
     display: flex;
@@ -909,17 +980,17 @@ button {
 }
 
 .write h2 {
-    width: 100%;
+    width: 80%;
     color: #364253;
-    font-size: 28px; 
+    font-size: 24px; 
     text-align: center;
     font-weight: 400;
     line-height: 1.3;
 }
 
 .write p {
-    width: 100%;
-    font-size: 17.4px;
+    width: 67%;
+    font-size: 14px;
     text-align: center;
     margin-top: 20px;
     max-width: 600px;
@@ -936,10 +1007,13 @@ button {
     color: white;
     margin-top: 20px;
     margin-left: 0;
+    transition: .4s;
 }
 
 .view:hover {
     background-color: rgb(241, 190, 94);
+    transform: scale(1.9);
+
 }
 
 @media (max-width: 992px) {
@@ -1018,59 +1092,45 @@ button {
     }
 }
 
-.best-sellers {
-    margin-top: 50px;
+.best-sellers h2{
+    margin-top: 100px;
     text-align: center;
-}
-
-.best-sellers h2 {
     font-size: 30px;
-    margin-top: 50px;
 }
-
-.product-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
 
 .about-us-container {
     width: 100%;
     justify-content: center;
-    padding: 20px 0;
+    padding: 20px 10px;
     flex-wrap: wrap;
 }
 
 .about-us {
-    width: 1200px;
-    margin-left: 100px;
+    width: 100%;
     background-color: white;
     flex-wrap: wrap;
-    margin-top: 30px;
-    align-items: center;
-    justify-content: center;
     padding: 40px;
     display: flex;
     border-radius: 10px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.read-more {
-    margin-right: 200px;
+.read-more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding:15px
 }
+
 
 .read-more h1 {
     font-size: 30px;
     color: #364253;
     font-weight: 400;
-    width: 150%;
-    margin-top: 120px;
 }
 
 .read-more p {
-    width: 190%;
     margin-top: 30px;
     color: #364253;
 }
@@ -1097,16 +1157,17 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    margin-right:30%; 
 }
 
 .service-item {
     width: 50%; 
     margin-bottom: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    gap:20px
 }
 
 .service-item i {
@@ -1114,27 +1175,21 @@ button {
     border: 1px solid #EB984E;
     color: #EB984E;
     padding: 10px;
-    margin-right: 180px;
     border-radius: 30px;
     margin-bottom: 10px;
 }
 
 .service-item h2 {
     font-size: 18px;
-    width: 300%;
-    margin-left: 60px;
     font-weight: 500;
     color: #364253;
 }
 
 .service-item p {
     font-size: 14px;
-    width: 370%;
-    margin-left: 130px;
     color: #364253;
     line-height: 1.9;
 }
-
 
 .footer {
     background-color: #404e5a;
@@ -1149,7 +1204,7 @@ button {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    width: 100%;
+    max-width: 1320px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
