@@ -139,7 +139,6 @@
         font-size: 14px; 
     }
 }
-
   
   main {
     display: flex;
@@ -179,7 +178,6 @@
     margin-bottom: 30px;
     font-size: 24px;
     color: #364253;
-    margin-right: 400px;
     width: 100%;
 }
 
@@ -215,6 +213,11 @@
 #quantity{
   width: 30%;
   height: 25px;
+}
+
+rating{
+    max-width: 100%;
+    justify-content: space-around;
 }
 
 @media screen and (max-width: 768px) {
@@ -264,7 +267,7 @@
   .product-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 100px;
+    justify-content: center;
   }
   
   .product-card {

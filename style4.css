@@ -59,8 +59,7 @@ h1 {
     font-size: 18px; 
     background-color: transparent; 
     border: none; 
-    border-color: orange; 
-    margin-left: 200px;
+    border-color: orange;
 }
 
 .step{
@@ -107,7 +106,6 @@ h1 {
 
 .d-flex{
     margin-right: 350px;
-    margin-top: 20px;
 }
 
 .row{
@@ -118,7 +116,6 @@ h1 {
 }
 
 .form-group {
-    margin-bottom: 15px;
     display: flex;
     padding: 10px;
     flex-wrap: wrap;
@@ -143,7 +140,6 @@ h1 {
 .continue-btn {
     padding: 10px 20px;
     flex-wrap: wrap;
-    margin-left: 300px;
     background-color: #EB984E;
     color: white;
     border: none;
